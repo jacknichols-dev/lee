@@ -1,0 +1,11 @@
+.top {
+  background-color: #c33c00;
+  color: white;
+  text-align: center;
+  height: 3.5rem;
+
+  & p {
+    font-size: 1.4rem;
+    padding: 0.8rem 0;
+  }
+}
