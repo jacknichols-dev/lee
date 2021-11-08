@@ -2,10 +2,19 @@
   background-color: #c33c00;
   color: white;
   text-align: center;
-  height: 3.5rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.2s;
 
   & p {
-    font-size: 1.4rem;
-    padding: 0.8rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 }

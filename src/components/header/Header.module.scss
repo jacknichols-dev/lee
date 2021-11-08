@@ -1,28 +1,54 @@
 .header {
   height: 7.5rem;
   width: 100vw;
-  // background: linear-gradient(to top, transparent, black);
+  background: linear-gradient(to top, transparent, black);
   position: absolute;
-  top: 3.5rem;
+  top: 3rem;
   left: 0;
   display: flex;
   align-items: center;
-  background-color: yellow;
-  padding: 0 2rem;
+  // transition: all 0.2s;
+  z-index: 999;
 
-  &__logo {
-    height: 7rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-container {
     flex: 1;
-    background-color: red;
+  }
+  &__logo {
+    height: 3.5rem;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    transition: all 0.2s;
+    fill: var(--light);
   }
 
   &__list {
-    flex: 2;
-    background-color: blue;
     color: var(--light);
     display: flex;
     list-style: none;
     justify-content: center;
+    flex: 2;
+    font-weight: 600;
+
+    &--item {
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__listscrolled {
+    color: var(--dark);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex: 2;
+    font-weight: 600;
 
     &--item {
       padding: 1rem 2rem;
@@ -30,9 +56,32 @@
   }
 
   &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     flex: 1;
-    background-color: green;
-    width: 30rem;
-    height: 5rem;
   }
+}
+
+.scrolled {
+  height: 4rem;
+  width: 100vw;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: height 0.2s;
+  background-color: var(--light);
+}
+
+.scrolled-logo {
+  height: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  transition: all 0.2s;
+  fill: var(--dark);
 }

@@ -1,11 +1,11 @@
 import { Header } from './components/header/Header';
-import { Hero } from './components/hero/Hero';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <Hero />
+      <Home />
     </div>
   );
 }
