@@ -1,0 +1,86 @@
+.footer {
+  background-color: var(--dark);
+  width: 100vw;
+  color: white;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7rem 0;
+  }
+
+  &__section {
+    width: calc(50% - 12rem);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem;
+
+    & h1 {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__subscribe {
+    height: 25rem;
+    background-color: var(--sec);
+
+    & p {
+      font-size: 1.4rem;
+    }
+    & form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-top: 2rem;
+
+      & label {
+        color: var(--pri);
+        font-size: 1.3rem;
+      }
+
+      & input {
+        width: calc(100% - 2rem);
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+  &__contact {
+    height: 25rem;
+  }
+
+  &__navigate {
+    height: 16rem;
+    & ul {
+      list-style: none;
+
+      & li {
+        color: var(--pri);
+      }
+    }
+  }
+  &__socials {
+    height: 16rem;
+    &--icons {
+      display: flex;
+    }
+
+    &--icon {
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--pri);
+
+      & label {
+        color: var(--light);
+        font-size: 1.3rem;
+        padding-top: 1rem;
+      }
+    }
+  }
+}

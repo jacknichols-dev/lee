@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="127.5" viewBox="0 0 170 127.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #edf4f8;
+      }
+    </style>
+  </defs>
+  <path id="Icon_open-double-quote-serif-left" data-name="Icon open-double-quote-serif-left" class="cls-1" d="M63.75,0A63.937,63.937,0,0,0,0,63.75V127.5H63.75V63.75H21.25a42.353,42.353,0,0,1,42.5-42.5ZM170,0a63.937,63.937,0,0,0-63.75,63.75V127.5H170V63.75H127.5A42.353,42.353,0,0,1,170,21.25Z"/>
+</svg>

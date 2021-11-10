@@ -19,7 +19,7 @@
     position: absolute;
     top: 50%;
     left: 20%;
-    background-color: var(--light);
+    background: linear-gradient(to bottom right, white, transparent);
     width: 40rem;
     transform: translateY(-50%);
     padding: 5rem;
@@ -35,16 +35,7 @@
 
     & p {
       padding-top: 3rem;
-    }
-
-    & button {
-      padding: 1rem 2.2rem;
-      background-color: var(--pri);
-      border: none;
-      outline: none;
-      color: var(--light);
-      border-radius: 5rem;
-      margin: 3rem 0;
+      margin-bottom: 4rem;
     }
   }
 }

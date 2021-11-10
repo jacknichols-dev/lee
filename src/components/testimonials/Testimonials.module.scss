@@ -1,0 +1,30 @@
+.testimonials {
+  height: 56rem;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__quote {
+    &--left {
+      fill: var(--light);
+      top: 10rem;
+      left: 5%;
+      position: absolute;
+    }
+
+    &--right {
+      fill: var(--light);
+      bottom: 10rem;
+      right: 5%;
+      position: absolute;
+    }
+  }
+
+  &__review {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+}

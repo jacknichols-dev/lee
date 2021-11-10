@@ -1,6 +1,5 @@
 import { useState } from "react";
 import classes from "./Header.module.scss"
-import logo from "../../assets/lee-logo.svg"
 import TopInfo from "./TopInfo"
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
@@ -23,11 +22,12 @@ export const Header = () => {
 
   const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
-      border: `2px solid black`,
+      border: scrolled ? '2px solid var(--light)' : '2px solid var(--dark)',
       padding: scrolled ? '0 2px' : '0 4px',
-      background: 'var(--sec)',
+      background: 'var(--pri)',
       fontSize: scrolled ? '1rem' : '1.2rem',
-      top: scrolled ? '.5rem' : '0'
+      top: scrolled ? '.5rem' : '0',
+      right: '-.2rem'
     },
   }));
 

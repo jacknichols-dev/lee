@@ -1,13 +1,13 @@
 .header {
-  height: 7.5rem;
+  height: 6.5rem;
   width: 100vw;
   background: linear-gradient(to top, transparent, black);
   position: absolute;
-  top: 3rem;
+  top: 2.7rem;
   left: 0;
   display: flex;
   align-items: center;
-  // transition: all 0.2s;
+  transition: height 0.2s;
   z-index: 999;
 
   &__container {
@@ -20,7 +20,7 @@
     flex: 1;
   }
   &__logo {
-    height: 3.5rem;
+    width: 10rem;
     flex: 1;
     align-items: center;
     display: flex;
@@ -79,7 +79,7 @@
 }
 
 .scrolled-logo {
-  height: 2.5rem;
+  width: 8rem;
   display: flex;
   justify-content: flex-start;
   transition: all 0.2s;
