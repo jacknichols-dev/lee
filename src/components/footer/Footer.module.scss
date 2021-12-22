@@ -46,6 +46,14 @@
         width: calc(100% - 2rem);
         padding: 1rem;
         margin: 1rem 0;
+        font-family: var(--f1);
+        font-size: 1.6rem;
+        outline: none;
+        color: var(--sec);
+
+        &::placeholder {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -58,8 +66,17 @@
     & ul {
       list-style: none;
 
+      & a {
+        text-decoration: none;
+      }
+
       & li {
         color: var(--pri);
+        transition: color .2s ease;
+
+        &:hover {
+          color: var(--light);
+        }
       }
     }
   }

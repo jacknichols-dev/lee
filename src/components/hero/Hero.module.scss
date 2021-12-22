@@ -4,15 +4,8 @@
   background-color: var(--dark);
   position: relative;
 
-  &__blue {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    background: var(--sec);
-    width: 60rem;
-    height: 60rem;
-    transform: translateY(-50%);
-    opacity: 0.3;
+  &__bg {
+    display: flex;
   }
 
   &__grey {
@@ -37,5 +30,9 @@
       padding-top: 3rem;
       margin-bottom: 4rem;
     }
+  }
+
+  &__grey &:nth-child(odd) {
+    left: 80%;
   }
 }

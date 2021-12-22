@@ -1,0 +1,10 @@
+.header {
+    height: 17rem;
+    background: linear-gradient(to bottom, black, var(--dark));
+    color: var(--light);
+    top: 20rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 2rem;
+}

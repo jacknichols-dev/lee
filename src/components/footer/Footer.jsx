@@ -1,11 +1,13 @@
 import classes from './Footer.module.scss'
 import { FooterBottom } from './FooterBottom'
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import { Button } from '../button/Button';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import { Button } from '../button/Button'
+import { Link } from 'react-router-dom'
+import SendIcon from '@mui/icons-material/Send';
 
 const Footer = () => {
     return (
@@ -20,26 +22,34 @@ const Footer = () => {
                         <form>
                             <label>Email address</label>
                             <input type="email" placeholder="Please enter your email" />
-                            <Button type="submit" bg="var(--pri)" color="white">Subscribe</Button>
+                            <div style={{margin: 'auto'}}>
+                            <Button type="submit" bg="var(--pri)" color="white">Subscribe <SendIcon /></Button>
+                            </div>
                         </form>
                     </section>
                     <section className={`${classes.footer__section} ${classes.footer__contact}`}>
                         <h1>Contact</h1>
-                        <SupportAgentIcon/>
-                        <p>Contact Agent</p>
-                        <p style={{color: 'var(--pri)'}}>publishing@soundpublishing.co.uk</p>
-                        <MailOutlineIcon />
-                        <p>Contact Author</p>
-                        <p style={{color: 'var(--pri)'}}>lee@leewoodauthor.com</p>
+                        <SupportAgentIcon sx={{ fontSize: 30 }}/>
+                        <p style={{paddingTop: '1rem'}}>Agent</p>
+                        <p style={{color: 'var(--pri)', paddingBottom: '2rem', fontWeight: '600'}}>publishing@soundpublishing.co.uk</p>
+                        <MailOutlineIcon sx={{ fontSize: 30 }}/>
+                        <p style={{paddingTop: '1rem'}}>Author</p>
+                        <p style={{color: 'var(--pri)', fontWeight: '600'}}>lee@leewoodauthor.com</p>
 
                     </section>
                     <section className={`${classes.footer__section} ${classes.footer__navigate}`}>
                         <h1>Navigate</h1>
                         <ul>
-                            <li>Home</li>
+                           <Link to='/'>
+                             <li>Home</li>
+                           </Link>
+                            <Link to='/books'>
                             <li>Books</li>
+                            </Link>
+                            <Link to='/about'>
                             <li>About</li>
-                            <li>Terms and Conditions</li>
+                            </Link>
+                            <li>Terms &#38; Conditions</li>
                         </ul>
                     </section>
                     <section className={`${classes.footer__section} ${classes.footer__socials}`}>
@@ -51,11 +61,11 @@ const Footer = () => {
                             </div>
                             <div className={classes['footer__socials--icon']}>
                                 <LinkedInIcon sx={{ fontSize: 30 }} />
-                                <label>Facebook</label>
+                                <label>Linkedin</label>
                             </div>
                             <div className={classes['footer__socials--icon']}>
                                 <TwitterIcon sx={{ fontSize: 30 }} />
-                                <label>Facebook</label>
+                                <label>Twitter</label>
                             </div>
                         </div>
                     </section>

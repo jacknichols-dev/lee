@@ -18,6 +18,12 @@
 
   &__logo-container {
     flex: 1;
+
+    & a {
+      width: 11rem;
+      display: flex;
+      height: 4rem;
+    }
   }
   &__logo {
     width: 10rem;
@@ -38,7 +44,33 @@
     font-weight: 600;
 
     &--item {
-      padding: 1rem 2rem;
+      color: var(--light);
+
+      & a {
+        padding: 1rem 2rem;
+        color: var(--light);
+        text-decoration: none;
+      }
+
+      & :hover {
+        color: var(--pri)
+        ;
+      }
+    }
+
+
+    &--scrolleditem {
+
+      & a {
+        padding: 1rem 2rem;
+        color: var(--dark);
+        text-decoration: none;
+      }
+
+      & :hover {
+        color: var(--pri)
+        ;
+      }
     }
   }
 
@@ -84,4 +116,8 @@
   justify-content: flex-start;
   transition: all 0.2s;
   fill: var(--dark);
+}
+
+.selected {
+  color: yellow;
 }

@@ -22,9 +22,17 @@
     }
   }
 
+  &__content {
+    transform: translateY(3rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__review {
     text-align: center;
-    width: 70%;
-    margin: auto;
+    width: 60%;
   }
 }

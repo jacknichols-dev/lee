@@ -3,23 +3,21 @@
   --pri: #419cd5;
   --sec: #084480;
   --ter: #d01010;
-  --light: #edf4f8;
-  --dark: #282d33;
+  --light: #e4eef3;
+  --dark: #1e1e24;
+
+  //shadows
+  --sha: 0 .3rem 1.8rem rgba(0,0,0,.2);
 
   //fonts
   --f1: 'Poppins', sans-serif;
-}
 
-//mixins
+  //swiper
+  --swiper-theme-color: #419cd5 !important;
+  --swiper-navigation-size: 2.5rem !important;
 
-// animations
-@keyframes Popup {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  //hovers
+  --hover: #5dc1ff;
 }
 
 // breakpoints

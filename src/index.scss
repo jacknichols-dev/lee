@@ -15,9 +15,10 @@ html {
 
 body {
   background-color: var(--dark);
+  letter-spacing: 0.1px;
   line-height: 1.35;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark);
   font-family: 'poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,10 +30,73 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2 {
+  letter-spacing: 0.1px;
+}
+
 h1 {
   font-size: 2.8rem;
 }
 
 h2 {
   font-size: 2.2rem;
+}
+
+::selection {
+  background-color: var(--pri);
+  color: white;
+}
+
+::selection {
+  background-color: var(--pri);
+  color: white;
+}
+
+//swiper style changes
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 3rem !important;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 5% !important;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 5% !important;
+}
+
+::selection {
+  background-color: var(--pri);
+  color: white;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  background: rgba(#051f48, 0.4) !important;
+  width: auto !important;
+  margin: auto !important;
+  height: 5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: 0 !important;
+  padding: 0 3rem !important;
+  border-radius: 0.5rem 0.5rem 0 0 !important;
 }

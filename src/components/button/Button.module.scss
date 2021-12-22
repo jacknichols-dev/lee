@@ -1,8 +1,21 @@
 .btn {
-  padding: 1rem 3rem;
+  padding: 1rem 3.5rem;
+  width: 20rem;
   border: none;
   outline: none;
   border-radius: 5rem;
   font-weight: 600;
   cursor: pointer;
+  font-size: 1.6rem;
+  font-family: var(--f1);
+  background: var(--pri);
+  transition: background 0.15s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &:hover {
+    background: var(--hover);
+  }
 }
